@@ -20,22 +20,25 @@ What is returned by puts("woah") || true?
 What is ||=?
   - An assignment operator (`x ||= y`) that only sets `x=y` if `x` is a falsey value
 What is the ternary operator?
-  -
+  - `condition ? do_if_true : do_if_false`; a shorthand means of writing an if-else statement
 When should you use a case statement?
-  -
+  - When expecting multiple specific cases (e.g. I want different outputs for 1, 2, 3, 4, 5 instead of one output for 1..5)
 
 ---
 
 **Iteration**:
 What does loop do?
+  - Iterate and perform some action(s) multiple times
 What are the two ways to denote a block of code?
+  - `{ }` and `do some_code end`
 What is an index variable?
+  - A variable that keeps track of the iterations of a loop
 How do you print out each item of a simple array [1,3,5,7] with:
 loop?
 while?
 for?
-#each?
-#times?
+\#each? `array.each{ |x| print "#{x}"}`
+\#times?
 What’s the difference between while and until?
 How do you stop a loop?
 How do you skip to the next iteration of a loop?
