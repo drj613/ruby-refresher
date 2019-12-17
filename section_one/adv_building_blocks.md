@@ -36,37 +36,61 @@ What is an index variable?
 How do you print out each item of a simple array [1,3,5,7] with:
 loop?
 while?
-for?
+for? `for x in [1, 3, 5, 7] do puts x end`
 \#each? `array.each{ |x| print "#{x}"}`
 \#times?
 What’s the difference between while and until?
+  - `while` loops as long as a conditional is met; `until` loops unless a conditional is met
 How do you stop a loop?
+  - `break`
 How do you skip to the next iteration of a loop?
+  - `next`
 How would you start the loop over again?
+  - `redo`
 What are the (basic) differences between situations when you would use while vs #times vs #each?
+  - `while` if you want to loop indefinitely as long as a certain condition isn't met
+  - `#times` if you want to do something a set number of times
+  - `#each` if you want to iterate over every item in an array
 What does nesting loops mean and when would you use it?
+  - Declaring a loop inside of another loop. Used for sorting or on multi-dimensional arrays (arrays with arrays inside of them)
 
 ---
 
 **Blocks, Procs, and Lambdas**:
 How is a block like a function?
+  - You can do things within a block the same way you can a function
 How is a block different from a function?
+  - Blocks are anonymous and cannot be called again by a name
 What are the two ways to declare a block?
+  - `{}` and `do ... end`
 How do you return data from a block?
+  - An implicit return will return the value of the last evaluated expression in the block
 What happens if you include a return statement in a block?
+  - You will be returned from whatever method actually called the block - `arr.each{ blabh blah return blah}` will break out of .each
 Why would you use a block instead of just creating a method?
+  - Blocks can be overwritten; so you can reuse code in different ways (e.g. when using `sort!`)
 What does yield do?
+  - Yield stops a method to allow a block of code to run, then returns to executing the original method
 How do you pass arguments to a block from within a method?
+  - `{ |variable| }`
 How do you check whether a block was actually passed in?
+  - `#block_given?`
 What is a proc?
+  -  AKA Procedures; a block that is saved to a variable
 What’s the difference between a proc and a block?
+  - Procs can be saved to variables
 When would you use a proc instead of a block?
+  - To reuse a block, or to use multiple at once
+How do you use a proc?
+  - Pass it into a function and prepend it with `&` - e.g. `[1,2,3].each(&my_proc)`
 What is a closure?
+  - A chunk of code that you can pass around which hangs onto the variables that you gave it when you first called it
 What is a lambda?
+  - A stricter and more functional version of Procs
 What’s different between a lambda and a proc?
+  - Lambdas will error if given the wrong number of arguments, and a lambda can use the explicit `return` statement without returning from the method it's enclosed in
 What is a Method (capital “M”)?
-What do Methods basically allow you to do that could probably be pretty interesting when you’re writing some more advanced programs later on?
-
+  - A way of taking an actual named method and passing it around as an argument (used rarely)
 ---
 
 **Enumerable and Modules**:
