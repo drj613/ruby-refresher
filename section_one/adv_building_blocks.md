@@ -95,20 +95,35 @@ What is a Method (capital “M”)?
 
 **Enumerable and Modules**:
 What is a module?
+  - A collection of methods packaged together
 Why are modules useful?
+  - It allows programmers to mix in a bunch of methods from one module into a new object without having to rewrite code
 What does #each do?
+  - #each is a method that iterates through Array, Hash, and Range classes and passes each iteration's object to a specified block
 What does #each return?
+  - #each returns the original collection that it was called on
 What does #map do?
+  - Loops through a collection, does something at each iteration, and collects the results
 What does #map return?
+  - #map returns a new array filled with whatever gets returned by the block each time it runs
 What is the difference between #map and #collect?
+  - They are the same
 What does #select do?
+  - Loops through a collection, selecting all objects whose iterations evaluated to `true` in the given block
 What does #select return?
+  - A new object that contains only the items for which the original block returned `true`
 What is the difference between #each #map and #select?
+  - `#each` loops, returns the object it was called on
+  - `#map` loops, does something at each iteration, then returns a new array filled with results of the action done during each iteration
+  - `#select` loops, evaluates whether an iteration meets certain criteria, then returns an object of all items which met criteria
 What does #inject do?
+  - Keeps track of results as it iterates
 When might you use #inject?
+  - Summing up the total values of an array
 How do you check if every item in a hash fulfills a certain criteria?
+  - `#all?`
 What about if none of the elements fulfill that criteria?
-What (basically) is an enumerator?
+  - `#none?`
 
 ---
 
