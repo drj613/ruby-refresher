@@ -1,4 +1,5 @@
 **Conditionals and Flow Control**:
+
 What is a “boolean”?
   - a true/false value
 What are “truthy” values?
@@ -27,6 +28,7 @@ When should you use a case statement?
 ---
 
 **Iteration**:
+
 What does loop do?
   - Iterate and perform some action(s) multiple times
 What are the two ways to denote a block of code?
@@ -57,6 +59,7 @@ What does nesting loops mean and when would you use it?
 ---
 
 **Blocks, Procs, and Lambdas**:
+
 How is a block like a function?
   - You can do things within a block the same way you can a function
 How is a block different from a function?
@@ -94,6 +97,7 @@ What is a Method (capital “M”)?
 ---
 
 **Enumerable and Modules**:
+
 What is a module?
   - A collection of methods packaged together
 Why are modules useful?
@@ -128,6 +132,7 @@ What about if none of the elements fulfill that criteria?
 ---
 
 **Writing Methods**:
+
 How many things should a method ideally do?
 What types of things should a method modify?
 What should you name a method?

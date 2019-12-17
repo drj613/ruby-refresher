@@ -1,4 +1,5 @@
 **Numbers, Operators, Expressions**:
+
 - What’s the difference between an `Integer` and a `Float`?
   - Integers are whole numbers, floats have decimals.
 - Why should you be careful when converting back and forth between integers and floats?
@@ -19,6 +20,7 @@
 ---
 
 **Strings**
+
 - What’s the difference between single and double quotes?
   - Double quotes allow for string interpolation.
 - What is string interpolation?
