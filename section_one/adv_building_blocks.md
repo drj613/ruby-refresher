@@ -122,7 +122,9 @@
 - What does #inject do?
   - Keeps track of results as it iterates
 - When might you use #inject?
-  - Summing up the total values of an array
+  - Whenever you need to access what was returned by the previous iteration
+  - Summing up the total values of an array `> my_array.inject(0){|running_total, item| running_total + item }
+`
 - How do you check if every item in a hash fulfills a certain criteria?
   - `#all?`
 - What about if none of the elements fulfill that criteria?
@@ -133,16 +135,47 @@
 **Writing Methods**:
 
 - How many things should a method ideally do?
+  - One
 - What types of things should a method modify?
+  - Instance variables and parameters
 - What should you name a method?
+  - Something descriptive and short
+  - Methods that return true/false should have a `?` at the end
 - What does self mean?
+  - Self refers to whatever object the current method was called on
+  - `current_user.jump` => `self = current_user`
 - What do you need to do to create your own Ruby script file?
+  - Create a file with a `.rb` extension
 - How would you run a Ruby script from the command line?
+  - `ruby filename.rb`
 - How can you check whether your script was being run from the command line?
+  - `if __FILE__==$0`
+- How do you tell the computer that your ruby file is an executable one?
+  - Add a shebang line to the very top of the file, before any spaces, then
+  - Type `$ chmod +x your_file.rb`
 - What is a shebang line?
+  - An absolute path to the Bash interpreter
 - What does require do?
+  - Imports another ruby file into the current one
 - What does load do?
+  - Loads a file in irb and reloads if it's edited and saved
 - What is the difference between require and load?
+  - `require` only loads the file once, so if there are changes they won't be seen
 - How do you access any parameters that were passed to your script file from the command line?
+  - ARGV (array that contains all command line parameters passed in at runtime)
 - What does #send do?
+  - `#send` runs a method on whatever object you call it on
 - When would #send be used that’s different from just running the method on an object ‘normally’?
+  - When methods are being generated dynamically or when looping through an array of methods.
+  - e.g. `%w(hello goodbye).each {|method_name| k.send(method_name)}`
+
+---
+
+**Misc**
+
+- What is `%w`?
+  - Shortcut for creating new string arrays
+  - `%w(a b) => ["a", "b"]`
+- What is `%i`?
+  - Shortcut for creating new symbol arrays
+  - `%i(i am sick) => [:i, :am, :sick]`
